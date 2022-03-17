@@ -1,0 +1,9 @@
+@font-face {font-family:"Open Sans" ; src: url("../font/OpenSans-Regular.ttf");}
+@font-face {font-family: "phosphate"; src: url('../font/PhosphateRR\ Solid.ttf');}
+    
+h1{
+    font-family: "phosphate";
+    color:  #e00f0f;
+    font-size: 30px;
+}
+
