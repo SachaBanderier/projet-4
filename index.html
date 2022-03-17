@@ -8,72 +8,84 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
- 
+
+ <main>
     <section id="services">
         <h1>
             Nos Services
         </h1>
         <div class="navServices">
-            <nav>
                 <ul>
                     <li>Enfant</li>
                     <li>Femme</li>
                     <li>Homme</li>
                 </ul>
-            </nav>
         </div>  
-       
-        <div id="boxService">
-            <div class="coupe1">
-                <div>
+        
+        <div id="boxServices">
+            <div class="coupeA">
+                <div class="coupe1">
                     <h2>
                         COUPE LONGUE
                     </h2>
+                    <div class="pointille"></div>
+                    <div class="euro">40€</div>
+                        <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </P>
+                </div>
+             
+                <div class="coupe1">
+                    <h2>
+                        COUPE LONGUE
+                    </h2>
+                    <div class="pointille"></div>
+                    <div class="euro">40€</div>
                     <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </P>
                 </div>
-                <div>
+                <div class="coupe1">
                     <h2>
                         COUPE LONGUE
                     </h2>
+                    <div class="pointille"></div>
+                    <div class="euro">40€</div>
                     <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </P>
                 </div>
-                <div>
+                <div class="coupe1">
                     <h2>
                         COUPE LONGUE
                     </h2>
+                    <div class="pointille"></div>
+                    <div class="euro">40€</div>
                     <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </P>
                 </div>
-                <div>
+                <div class="coupe1">
                     <h2>
                         COUPE LONGUE
                     </h2>
-                    <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </P>
-                </div>
-                <div>
-                    <h2>
-                        COUPE LONGUE
-                    </h2>
+                    <div class="pointille"></div>
+                    <div class="euro">40€</div>
                     <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </P>
                 </div>
             </div>
+            <div class="finServices">AFFICHER PLUS</div>
+            <div class="traitEspace"></div>
        
-            <div class="coupe2">
-                <div>
+            <!--<div class="coupeB">
+                <div class="coupe2">
                     <h2>
                         COUPE LONGUE
                     </h2>
@@ -82,7 +94,7 @@
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </P>
                 </div>
-                <div>
+                <div class="coupe2">
                     <h2>
                         COUPE LONGUE
                     </h2>
@@ -91,7 +103,7 @@
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </P>
                 </div>
-                <div>
+                <div class="coupe2">
                     <h2>
                         COUPE LONGUE
                     </h2>
@@ -100,7 +112,7 @@
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </P>
                 </div>
-                <div>
+                <div class="coupe2">
                     <h2>
                         COUPE LONGUE
                     </h2>
@@ -109,7 +121,7 @@
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </P>
                 </div>
-                <div>
+                <div class="coupe2">
                     <h2>
                         COUPE LONGUE
                     </h2>
@@ -118,41 +130,42 @@
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </P>
                 </div>
-            </div> 
+            </div> -->
         </div>
     </section> 
 
     <section id="contacter">
-        <div class="boxContact">
             <div class="contact">
                 <h1>
                     NOUS CONTACTER
                 </h1>
-                <p>+3334394826</p>
-                <p>CONTACT@PURE-HAIRCUT.COM</p>
+                <p class="phone">+3334394826</p>
+                <p class="mail">CONTACT@PURE-HAIRCUT.COM</p>
             </div>
       
-            <div class="formulaire">
+            <div id="formulaire">
                 <form method="post" action="traitement.php">
-                    <input type="text" id="name" name="user_name" placeholder="Nom" autofocus required>
-                    <input type="text" id="surname" name="user_name" placeholder="Prénom" autofocus required>
-                    <input type="tel" id="tel" name="tel" placeholder="tél" autofocus required>
-                    <input type="tel" id="email" name="email" placeholder="Email" autofocus required>
-                    <input type="textarea" id="msg" name="user_message" placeholder="Votre message...">
-                    <input type="submit" id="envoye" name="submit" placeholder="Envoyer">
+                    <input type="text" class="name" name="user_name" placeholder="Nom" autofocus required>
+                    <input type="text" class="surname" name="user_name" placeholder="Prénom" autofocus required>
+                    <input type="phone" class="tel" name="tel" placeholder="tél" autofocus>
+                    <input type="tel" class="email" name="email" placeholder="Email" autofocus>
+                    <input type="textarea" class="msg" name="user_message" placeholder="Votre message...">
+                    <input type="submit" class="envoye" name="submit" placeholder="Envoyer">
                 </form>
             </div>
-        
-            <div>
-                <img src="" alt="">
+                <div class="traitSend"></div>
+            <div class="boxMap">
+                <div class="map">
+                    <img src="assets/img/map.png" alt="carte de géocalisation">
+                </div>
             </div>
-        </div>
+        
     </section>
 
     <footer>
             <div id="identite">
                 <h2>
-                    PURE HAICUT
+                    PURE HAIRCUT
                 </h2>
                 <P>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -173,6 +186,7 @@
                 <p>Une réalisation Webantek</p>
             </div>
     </footer>
+</main>   
 </body>
 <script src="app.js"></script>
 </html>
