@@ -17,6 +17,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: #4f582e;
 }     
 #services>h1{
     font-family:"Phosphate";
@@ -31,27 +32,29 @@ main{
     min-height: 10%;
     display: flex;
     justify-content: center;
-}
-.navServices>ul{
-    font-size: 1.25em;
-    display: flex;
     align-items: center;
+    background: #B67D27;
+    flex-direction: row;
+    
 }
-li{
+h3{
     font-family:"Phosphate";
     text-decoration: none;
-    display: flex;
     margin-left: 25px;
-    margin-top: -80px;
+    margin-top: -25px;
     color: white;
     padding: 5px;
-    margin-left: 10px;
+    font-weight: 400;
 }
-.navServices>ul>li:hover{
+.navServices>h3{
+
+
+
+
+}
+.navServices>h3:hover{
    border-bottom: 4px solid #B67D27;
-}
-ul{
-    margin-left: -190px;
+
 }
 #boxServives{
     width: 100%;
@@ -62,14 +65,12 @@ ul{
 }
 #boxServices>.coupeA>.coupe1>h2{
     font-family: 'Phosphate';
-    font-style: normal;
     font-weight: 400;
     font-size: 1.25em;
     line-height:1.563em ;
     color: #FFFFFF;
     margin: 10px;
-    margin-top: 40px;
-}
+  }
 #boxServices>.coupeA>.coupe1>p{
     width: 75%;
     font-family: 'Open Sans';
@@ -91,8 +92,9 @@ ul{
     content:'';
     border: 2px dashed #B67D27;
     transform: matrix(1, 0.01, -0.01, 1, 0, 0);
-    width: 20%;
-    margin-top: -20px;
+    width: 15%;
+    border-spacing: 20%;
+    margin-top: -25px;
     margin-left: 170px;
    }
 .pointelle>.euro{
@@ -104,7 +106,6 @@ ul{
     border: 2px dashed #B67D27;
     transform: matrix(1, 0.01, -0.01, 1, 0, 0);
     width: 20%;
-    margin-top: -20px;
     margin-left: 170px;
 }
 .euro{
@@ -115,7 +116,7 @@ ul{
     line-height: 1.938em;
     color: #B67D27;
     margin-left: 300px;
-    margin-top : -40px;
+    margin-top : -50px;
 }
 .coupeA{
     display: flex;
@@ -169,7 +170,6 @@ ul{
     color: #FFFFFF;
     margin-left: -100px;
     margin-top: 120px;
-
 }
 .contact>.phone{
     font-family: 'Phosphate';
@@ -261,50 +261,86 @@ ul{
     margin-top: 30px;
 }
 footer{
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 #identite{
-
+    min-height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 #identite>h2{
-
     font-family: 'Phosphate';
     font-style: normal;
-    font-weight: 400;
-    font: size 1.3em;;
-    line-height:1.625;
+    font-weight: 100;
+    font-size: 1.313em;
     letter-spacing: 0.15em;
     color: #FFFFFF;
-    margin-top: 150px;
 }
 #identite>p{
-
     width: 65%;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 0.813em;
-    line-height:1.125em;
+    line-height:1.3em;
     text-align: center;
-    
     color: #FFFFFF;
-    
-    
-
-
+}
+#adress{
+    min-height: 20%;
+    flex-direction: column;
+   
+}
+#adress>p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 0.813em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    margin: 0 0px;
+    text-align: center;
+    }
+#legals{
+    width: 100%;
+    min-height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#legals>p{
+    font-family: 'Open Sans';
+    font-size: 0.8em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    margin: 0 40px;
+}
+span{
+    color: #B67D27;
 }
 
 
-
 @media screen and (min-height: 500px){
-    
+   
+/*#services>h1 {
+    font-family: "Phosphate";
+    font-size: 3.438em;
+    line-height: 4.313em;
+    color: white;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-top: -48px;
+}
+
+
 }
 @media screen and (min-height: 1024px){
     
