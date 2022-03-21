@@ -1,88 +1,69 @@
 @font-face {font-family: "Open Sans"; src: url("../font/OpenSans-Regular.ttf");}
 @font-face {font-family: "Phosphate"; src: url("../font/PhosphateRR\ Solid.ttf");}
 
-body{
-    width: 100%;
-    height: 100vh;
-    margin:0px;
+*{
+    margin:0;
     box-sizing: border-box;
-}
+   }
 main{
     background: radial-gradient(43.25% 43.25% at 50% 50%, rgba(48, 47, 47, 0.87) 0%, #302F2F 100%);
 }
+h2,h3,.envoye,.finServices{
+    font-family: 'Phosphate';
+    font-weight: 400;
+    color: white;
+}
+p{
+    font-family: 'Open Sans';
+    color: #FFFFFF;
+    font-weight: 400;
+   }
 #services{
     width: 100%;
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    background: #4f582e;
 }     
-#services>h1{
-    font-family:"Phosphate";
+#services>.boxServices>.titleServices>h2{
     font-size: 2.125em;
     line-height: 2.625em;
-    color: white;
-    font-weight: 400;
-    margin-top: 0px;
-    margin-left: -160px;
+    margin-left: 10px;
+   
 }
-.navServices{
-    min-height: 10%;
+.boxPersonne{
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: #B67D27;
-    flex-direction: row;
-    
 }
 h3{
-    font-family:"Phosphate";
-    text-decoration: none;
-    margin-left: 25px;
-    margin-top: -25px;
-    color: white;
-    padding: 5px;
-    font-weight: 400;
+    margin: 0px 15px;
+    font-size: 1.25em;
 }
-.navServices>h3{
-
-
-
-
-}
-.navServices>h3:hover{
+#services>.boxPersonne>h3:hover{
    border-bottom: 4px solid #B67D27;
-
+   line-height: 30px;
 }
-#boxServives{
+#boxCoupe{
     width: 100%;
     min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#boxServices>.coupeA>.coupe1>h2{
-    font-family: 'Phosphate';
-    font-weight: 400;
+#boxCoupe>.coupeA>.coupe1>h2{
     font-size: 1.25em;
     line-height:1.563em ;
-    color: #FFFFFF;
     margin: 10px;
   }
-#boxServices>.coupeA>.coupe1>p{
+#boxCoupe>.coupeA>.coupe1>p{
     width: 75%;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 0.813em;
     margin-left: 10px;
-    color: #FFFFFF;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .coupe1{
-    margin-top: 0px;
+    margin-top: 25px;
+    font-weight: 400;
 }
 .coupe1>.pointille{
     position:relative;
@@ -92,47 +73,29 @@ h3{
     content:'';
     border: 2px dashed #B67D27;
     transform: matrix(1, 0.01, -0.01, 1, 0, 0);
-    width: 15%;
-    border-spacing: 20%;
-    margin-top: -25px;
-    margin-left: 170px;
-   }
-.pointelle>.euro{
-    position:relative;
-}
-.pointille>.euro::before{
-    position: absolute;
-    content:'';
-    border: 2px dashed #B67D27;
-    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
     width: 20%;
-    margin-left: 170px;
+    margin-top: -25px;
+    margin-left: 47%;
+}
+.euro{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: -50px;
 }
 .euro{
     font-family: 'Phosphate';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.563em;
+    font-size: 1.5em;
     line-height: 1.938em;
     color: #B67D27;
-    margin-left: 300px;
-    margin-top : -50px;
-}
-.coupeA{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    margin-left: 70%;
+    font-weight: 100;
 }
 .finServices{
-    font-family: 'Phosphate';
-    font-style: normal;
-    font-weight: 400;
     font-size: 1.313em;
     margin: 10px;
     margin-top: 20px;
-    color: #FFFFFF;
-}
+    }
 .traitEspace{
     position:relative;
 }
@@ -143,8 +106,7 @@ h3{
     border: 2px solid #B67D27;
     margin-left: 10px;
     margin-top: -10px;
-    
-  }
+}
 #contacter{
     width: 100%;
     min-height: 100%;
@@ -157,42 +119,31 @@ h3{
     width: 100%;
     min-width: 20%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    margin-top: 100px;
 }
-.contact>h1{
-    font-family: 'Phosphate';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 42px;
-    color: #FFFFFF;
-    margin-left: -100px;
-    margin-top: 120px;
+.contact>h2{
+    font-size: 2.125em;
+    line-height:2.625em;
+    margin: 0px 0px 0px 10px;
 }
-.contact>.phone{
+.contact>.phone,.mail{
     font-family: 'Phosphate';
-    font-style: normal;
-    font-weight: 400;
     font-size:0.81em;
     line-height: 1em;
     letter-spacing: 0.15em;
     color: #B67D27;
-    margin-left: -280px;
-    margin-top: -15px;
 }
+.contact>.phone{
+    margin-left: 10px;
+}   
 .contact>.mail{
-    font-family: 'Phosphate';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.81em;
-    line-height: 1em;
-    letter-spacing: 0.15em;
     text-decoration-line: underline;
-    color: #B67D27;
-    margin-left: -135px;
-    margin-top: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 20px;
 }
 .formulaire{
     width: 100%;
@@ -206,143 +157,269 @@ h3{
     display: flex;
     flex-direction: column;
 }
-.name{
+.name,.telForm,.surname,.email{
     border: 2px groove #FFFFFF;
-    width: 70%;
-    margin: 0px 0px;
+    width: 80%;
     background-color: #302F2F;
     margin-left: 10px;
     padding: 10px;
+    color: #FFFFFF;
 }
-.surname, .tel, .email{
-    border: 2px groove #FFFFFF;
-    width: 70%;
-    margin: 10px 0px;
-    background-color: #302F2F;
+.surname,.telForm,.email,.msg{
     margin-left: 10px;
-    padding: 10px;
+    margin: 10px;
 }
 .msg{
     border: 2px solid #FFFFFF; 
-    width: 50%;
-    height: 20%;
-    margin: 10px 0px;
+    width: 80%;
+    padding: 15%;
     background-color: #302F2F;
     margin-left: 10px;
-    padding: 50px;
-}
-.envoye{
-    font-family: 'Phosphate';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.313em;
-    line-height: 1.625em;
     color: #FFFFFF;
-    background-color:#302F2F;
-    border: 1px solid #302F2F;
-    color:white;
-    margin: 5px;
 }
 .traitSend{
-    width: 19%;
+    position:relative;
+}
+.traitSend:after{
+    content: '';
+    position: absolute;
+    width: 98px;
     border: 2px solid #B67D27;
-    margin-left: -290px;
+    margin-left: 10px;
     margin-top: -10px;
 }
 .boxMap{
+    width: 100%;
+    min-width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
- }
+}
  img{
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: 57vh;
     margin-top: 30px;
 }
 footer{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-#identite{
-    min-height: 40%;
+.boxTitle{
+    min-height: 25vh;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    flex-direction: column;
+  
 }
-#identite>h2{
-    font-family: 'Phosphate';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 1.313em;
+.logoFooter>h2{
     letter-spacing: 0.15em;
-    color: #FFFFFF;
+    font-size: 1.313em;
+    line-height: 1.625;
 }
-#identite>p{
-    width: 65%;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.813em;
-    line-height:1.3em;
-    text-align: center;
-    color: #FFFFFF;
-}
-#adress{
-    min-height: 20%;
-    flex-direction: column;
-   
-}
-#adress>p{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 0.813em;
-    line-height: 1.5em;
-    color: #FFFFFF;
-    margin: 0 0px;
-    text-align: center;
-    }
-#legals{
-    width: 100%;
-    min-height: 20%;
+#boxFooter{
+    min-height: 75vh;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
 }
-#legals>p{
-    font-family: 'Open Sans';
+#boxFooter>.textFooter{
+    width: 65%;
+    text-align: center;
+    margin-top: -100px;
+    font-size: 0.813em;
+}
+.textFooter{
+display: flex;
+justify-content: flex-start;
+align-content: flex-end;
+margin-top: 50px;
+}
+#boxFooter>.adressFooter{
     font-size: 0.8em;
     line-height: 1.5em;
-    color: #FFFFFF;
-    margin: 0 40px;
+    text-align: center;
+    font-weight: 400;
+}
+#boxFooter>.legalsFooter{
+    font-size: 0.8em;
+    line-height: 1.4em;
+    margin-bottom: 50px;
+    text-align: center;
 }
 span{
     color: #B67D27;
 }
-
-
-@media screen and (min-height: 500px){
+/*--------------------------responsive Tablette---------------------*/
+@media screen and (min-width: 601px) and (max-width:1023px){
    
-/*#services>h1 {
-    font-family: "Phosphate";
+#services>.boxServices>.titleServices>h2{
     font-size: 3.438em;
     line-height: 4.313em;
-    color: white;
-    font-weight: 400;
-    margin-top: 0px;
     margin-left: 20px;
-    margin-top: -48px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+.boxPersonne>h3{
+    margin: 0px 15px;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.563em;
+    margin-left: 30px;
+}
+#boxCoupe>.coupeA>.coupe1>h2{
+    margin-left: 20px;
+}
+#boxCoupe>.coupeA>.coupe1>p{
+    margin-left: 20px;
+    color: rgb(235, 227, 210);
+    font-size: 0.813em;
+}
+.coupe1>.pointille{
+    position:relative;
+}
+.coupe1>.pointille::before{
+    position: absolute;
+    content:'';
+    border: 2px dashed #B67D27;
+    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+    width: 55%;
+    margin-top: -25px;
+    margin-left: 24%;
+}
+.coupe1{
+    margin-top: 10px;
+}
+.coupe1>h2{
+    margin-top: -60px;
+}
+.coupe1>p{
+ line-height: 1.4em;
+ padding-top: 20px;
+ padding-bottom: 10px;
+}
+.finServices{
+    margin-left: 30px;
+}
+.contact>h2{
+    font-size: 3.438em;
+    line-height:4.297em;
+    margin: 0px 0px 0px 20px;
+    margin-top: 20px;
+}
+.traitEspace{
+    position:relative;
+}
+.traitEspace:after {
+    content: '';
+    position: absolute;
+    width: 98px;
+    border: 2px solid #B67D27;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+.contact{
+     margin-top: 0px;
+}
+.contact>.phone,.mail{
+    margin-left: 10px;
+    font-size: 1.313em;
+    line-height:1.625em;
+    letter-spacing: 0.15em;
+    padding: 20px;
+}
+.contact>.mail{
+    margin-left: 10px;
+    margin-top: -30px;
+}
+.contact>.phone{
+    margin-top: -85px;
+    text-decoration: none;
+}
+.formulaire{
+    width: 100%;
+    min-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.formulaire>form{
+    display: flex;
+    flex-direction: column;
+}
+.name,.surname{
+    border: 2px groove #FFFFFF;
+    width: 33%;
+    background-color: #302F2F;
+   
+    padding: 20px;
+   
+}
+.telForm{
+    border: 2px groove #FFFFFF;
+    width: 70%;
+    background-color: #302F2F;
+    padding: 20px;
+}
+.email{
+    border: 2px groove #FFFFFF;
+    width: 70%;
+    background-color: #302F2F;
+   
+    padding: 20px;
+}
+.surname,.telForm,.email,.msg{
+    margin-left: 20px;
+    font-size: 1.25em;
+}
+.msg{
+    border: 2px solid #FFFFFF; 
+    width: 70%;
+    padding: 15%;
+    background-color: #302F2F;
+    margin-left: 10px;
+    color: #FFFFFF;
+}
+.traitSend{
+    position:relative;
+}
+.traitSend:after{
+    content: '';
+    position: absolute;
+    width: 98px;
+    border: 2px solid #B67D27;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.boxMap{
+    width: 100%;
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ img{
+    width: 100%;
+    height: 57vh;
+    margin-top: 30px;
 }
 
 
-}
+
+
+
+
+
+
+
+/*-----------------------responsive Pc------------------------------*/
 @media screen and (min-height: 1024px){
-    
 }
 

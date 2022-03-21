@@ -5,28 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pure Haircut</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
  <main>
+     <!---------------------------------------section Nos Services ----------------------------------->
     <section id="services">
-        <div class="navServices"></div>
-            <h1>
-                Nos Services
-            </h1>
-            <h3>
-                Enfant
-            </h3>
-            <h3>
-                Femme
-            </h3>
-            <h3
-                >Homme
-            </h3>
-        </div>  
-        
-        <div id="boxServices">
+        <div class="boxServices">
+             <div class="titleServices">
+                <h2>
+                    Nos Services
+                </h2>
+            </div>
+            <div class="boxPersonne">
+                <h3> Enfant </h3>
+                <h3> Femme </h3>
+                <h3> Homme </h3>
+            </div>
+        </div>
+        <div id="boxCoupe">
             <div class="coupeA">
                 <div class="coupe1">
                     <h2>
@@ -84,10 +83,13 @@
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </P>
                 </div>
+                    <div class="finServices">
+                        AFFICHER PLUS
+                    </div>
+                    <div class="traitEspace"></div>
             </div>
-            <div class="finServices">AFFICHER PLUS</div>
-            <div class="traitEspace"></div>
-       
+            
+             
             <!--<div class="coupeB">
                 <div class="coupe2">
                     <h2>
@@ -137,61 +139,68 @@
             </div> -->
         </div>
     </section> 
-
+    <!-------------------------------------------------- section contact--------------------------------->
     <section id="contacter">
             <div class="contact">
-                <h1>
+                <h2>
                     NOUS CONTACTER
-                </h1>
-                <p class="phone">+3334394826</p>
-                <p class="mail">CONTACT@PURE-HAIRCUT.COM</p>
+                </h2>
+                <a href="" class="phone">+3334394826</a>
+                <a href="" class="mail">CONTACT@PURE-HAIRCUT.COM</a>
             </div>
       
             <div id="formulaire">
                 <form method="post" action="traitement.php">
                     <input type="text" class="name" name="user_name" placeholder="Nom" autofocus required>
                     <input type="text" class="surname" name="user_name" placeholder="Prénom" autofocus required>
-                    <input type="phone" class="tel" name="tel" placeholder="tél" autofocus>
-                    <input type="tel" class="email" name="email" placeholder="Email" autofocus>
-                    <input type="textarea" class="msg" name="user_message" placeholder="Votre message...">
+                    <input type="tel" class="telForm" name="tel" placeholder="tél" autofocus>
+                    <input type="email" class="email" name="email" placeholder="Email" autofocus>
+                    <input type="textarea" class="msg" name="user_message" placeholder="Entrez Votre message..">
                     <input type="submit" class="envoye" name="submit" placeholder="Envoyer">
+                    <div class="traitSend"></div>
                 </form>
             </div>
-                <div class="traitSend"></div>
+               
             <div class="boxMap">
-                <div class="map">
-                    <img src="assets/img/map.png" alt="carte de géocalisation">
+                <img src="assets/img/map.png" alt="carte de géocalisation">
+                
+            </div>
+    </section>
+/<!----------------------------------------------------------------zone footer---------------------------------->
+    <footer>
+        <div id="logoFooter">
+            <div class="boxTitle">
+                <div class="logoFooter">
+                    <h2>
+                        PURE HAIRCUT
+                    </h2>
                 </div>
             </div>
-        
-    </section>
-
-    <footer>
-            <div id="identite">
-                <h2>
-                    PURE HAIRCUT
-                </h2>
-                <P>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem <br> Ipsum has been <br>the industry's standard dummy text ever since the 1500s,
-                    the industry's standard dummy text ever since the 1500s.
-                </P>
+            <div id="boxFooter">
+                <div class="textFooter">
+                    <P>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem <br> Ipsum has been <br>the industry's standard dummy text ever since the 1500s,
+                        the industry's standard dummy text ever since the 1500s.
+                    </P>
+                </div>
+                <div class="adressFooter">
+                    <p>145 rue de la rue</p>
+                    <p>39000 Lons-le-Saunier</p>
+                    <p>+33340394826</p>
+                    <p>contact@pure-haircut.com</p>
+                </div>
+                <div class="legalsFooter">
+                    <p> Mention légales </p>
+                    <p> Politique de confidentilité </p>
+                    <p> Copyright 2022 &copy Pure Haircut </p>
+                    <p> Une réalisation <span>Webantek</span></p>
+                </div>
             </div>
-            <div id="adress">
-                <p>145 rue de la rue</p>
-                <p>39000 Lons-le-Saunier</p>
-                <p>+33340394826</p>
-                <p>contact@pure-haircut.com</p>
-            </div>
-            <div id="legals">
-                <p>Mentions légales</p>
-                <p>Politique de confidentialité</p>
-                <p>Copyright 2022 &copy; Pure Haircut</p>
-                <p>Une réalisation <span> Webantek </span></p>
-            </div>
+        </div>            
     </footer>
 </main>   
 </body>
-<script src="app.js"></script>
+<script src="assets/js/app.js"></script>
 </html>
 
