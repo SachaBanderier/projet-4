@@ -4,11 +4,11 @@
 *{
     margin:0;
     box-sizing: border-box;
-   }
+}
 main{
     background: radial-gradient(43.25% 43.25% at 50% 50%, rgba(48, 47, 47, 0.87) 0%, #302F2F 100%);
 }
-h2,h3,.envoye,.finServices{
+h2,h3,.finServices{
     font-family: 'Phosphate';
     font-weight: 400;
     color: white;
@@ -17,7 +17,8 @@ p{
     font-family: 'Open Sans';
     color: #FFFFFF;
     font-weight: 400;
-   }
+}
+/*-------------------------section services-------Mobile---------------------------------*/
 #services{
     width: 100%;
     min-height: 100vh;
@@ -29,7 +30,6 @@ p{
     font-size: 2.125em;
     line-height: 2.625em;
     margin-left: 10px;
-   
 }
 .boxPersonne{
     display: flex;
@@ -61,9 +61,11 @@ h3{
     margin-left: 10px;
     margin-top: 0px;
 }
+.coupeB{
+    display: none;
+}
 .coupe1{
-    margin-top: 25px;
-    font-weight: 400;
+    margin-top: 38px;
 }
 .coupe1>.pointille{
     position:relative;
@@ -79,7 +81,6 @@ h3{
 }
 .euro{
     display: flex;
-    align-items: flex-end;
     justify-content: center;
     margin-top: -50px;
 }
@@ -89,27 +90,40 @@ h3{
     line-height: 1.938em;
     color: #B67D27;
     margin-left: 70%;
-    font-weight: 100;
+}
+.coupe1T>h2{
+    display: none;
+}
+.coupe1T>.pointillé{
+    display: none;
+}
+.coupe1T>.euro{
+    display: none;
+}
+.coupe1T>p{
+    display: none;
 }
 .finServices{
     font-size: 1.313em;
     margin: 10px;
-    margin-top: 20px;
-    }
+    margin-top: 40px;
+    line-height: 1.625em;
+}
 .traitEspace{
     position:relative;
 }
 .traitEspace:after {
     content: '';
     position: absolute;
-    width: 98px;
+    width: 90px;
     border: 2px solid #B67D27;
     margin-left: 10px;
     margin-top: -10px;
 }
+/*-----------------------------------section contact----Mobile-------------------------*/
 #contacter{
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,10 +133,8 @@ h3{
     width: 100%;
     min-width: 20%;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 88px;
 }
 .contact>h2{
     font-size: 2.125em;
@@ -135,10 +147,13 @@ h3{
     line-height: 1em;
     letter-spacing: 0.15em;
     color: #B67D27;
+    margin-left: 10px;
 }
 .contact>.phone{
-    margin-left: 10px;
-}   
+    text-decoration: none;
+    margin-top: -17px;
+    padding: 7px;
+}
 .contact>.mail{
     text-decoration-line: underline;
     margin-left: 10px;
@@ -152,6 +167,7 @@ h3{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 7px;
 }
 .formulaire>form{
     display: flex;
@@ -161,9 +177,10 @@ h3{
     border: 2px groove #FFFFFF;
     width: 80%;
     background-color: #302F2F;
-    margin-left: 10px;
-    padding: 10px;
+    margin-left:10px;
+    padding: 12px;
     color: #FFFFFF;
+    margin-top: 12px;
 }
 .surname,.telForm,.email,.msg{
     margin-left: 10px;
@@ -177,6 +194,17 @@ h3{
     margin-left: 10px;
     color: #FFFFFF;
 }
+.envoye{
+    font-family: 'Phosphate';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.313em;
+    line-height: 1.625em;
+    color: #FFFFFF;
+    background: transparent;
+    border: 0;
+    margin-left: 5px;
+}
 .traitSend{
     position:relative;
 }
@@ -186,7 +214,6 @@ h3{
     width: 98px;
     border: 2px solid #B67D27;
     margin-left: 10px;
-    margin-top: -10px;
 }
 .boxMap{
     width: 100%;
@@ -201,6 +228,7 @@ h3{
     height: 57vh;
     margin-top: 30px;
 }
+/*----------------------------section footer---Mobile---------------------------------*/
 footer{
     width: 100%;
     min-height: 100vh;
@@ -255,9 +283,9 @@ margin-top: 50px;
 span{
     color: #B67D27;
 }
-/*--------------------------responsive Tablette---------------------*/
+/*-------------------------------responsive Tablette--------------------------------------*/
 @media screen and (min-width: 601px) and (max-width:1023px){
-   
+
 #services>.boxServices>.titleServices>h2{
     font-size: 3.438em;
     line-height: 4.313em;
@@ -279,6 +307,8 @@ span{
     margin-left: 20px;
     color: rgb(235, 227, 210);
     font-size: 0.813em;
+    padding: 5px;
+    width: 72%;
 }
 .coupe1>.pointille{
     position:relative;
@@ -299,13 +329,58 @@ span{
     margin-top: -60px;
 }
 .coupe1>p{
- line-height: 1.4em;
- padding-top: 20px;
- padding-bottom: 10px;
+    line-height: 1.4em;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#boxCoupe>.coupeA>.coupe1T>h2{
+    margin-left: 20px;
+    display: flex;
+}
+#boxCoupe>.coupeA>.coupe1T>p{
+    margin-left: 20px;
+    color: rgb(235, 227, 210);
+    font-size: 0.813em;
+    padding: 5px;
+    display: flex;
+}
+.coupe1T>.pointille{
+    position:relative;
+}
+.coupe1T>.pointille::before{
+    position: absolute;
+    content:'';
+    border: 2px dashed #B67D27;
+    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+    width: 55%;
+    margin-top: -10px;
+    margin-left: 24%;
+}
+.coupe1T{
+    margin-top: 10px;
+}
+.coupe1T>h2{
+   font-size: 1.25em;
+}
+.coupe1T>p{
+    width: 72%;
+    line-height: 1.4em;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.coupe1T>.euro{
+    font-size: 1.5em;
+    line-height: 1.938em;
+    color: #B67D27;
+    margin-left: 70%;
+    font-weight: 100;
+    margin-top: -35px;
+    display: flex;
 }
 .finServices{
     margin-left: 30px;
 }
+/*-------------------------section contact ----responsive Tabelette---------------------------------*/
 .contact>h2{
     font-size: 3.438em;
     line-height:4.297em;
@@ -334,7 +409,6 @@ span{
     padding: 20px;
 }
 .contact>.mail{
-    margin-left: 10px;
     margin-top: -30px;
 }
 .contact>.phone{
@@ -343,7 +417,7 @@ span{
 }
 .formulaire{
     width: 100%;
-    min-width: 30%;
+    min-height: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -353,62 +427,288 @@ span{
     display: flex;
     flex-direction: column;
 }
-.name,.surname{
+.name{
     border: 2px groove #FFFFFF;
     width: 33%;
     background-color: #302F2F;
-   
-    padding: 20px;
-   
-}
-.telForm{
-    border: 2px groove #FFFFFF;
-    width: 70%;
-    background-color: #302F2F;
-    padding: 20px;
-}
-.email{
-    border: 2px groove #FFFFFF;
-    width: 70%;
-    background-color: #302F2F;
-   
-    padding: 20px;
-}
-.surname,.telForm,.email,.msg{
-    margin-left: 20px;
+    padding: 24px;
     font-size: 1.25em;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.surname{
+    width: 34%;
+    padding: 24px;
+    font-size: 1.25em;
+    margin-left: 20px;
+}
+.telForm,.email{
+    width: 70%;
+    padding: 20px;
+    font-size: 1.25em;
+    margin-left: 20px;
 }
 .msg{
-    border: 2px solid #FFFFFF; 
+    margin-left: 20px;
+    font-size: 1.25em;
     width: 70%;
-    padding: 15%;
-    background-color: #302F2F;
-    margin-left: 10px;
-    color: #FFFFFF;
+    padding: 13%
 }
-.traitSend{
-    position:relative;
+.envoye{
+    font-size: 1.313em;
+    line-height: 1.625em;
+    background: transparent;
+    border: 0;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 .traitSend:after{
     content: '';
     position: absolute;
-    width: 98px;
+    width: 10%;
     border: 2px solid #B67D27;
-    margin-left: 10px;
-    margin-top: -10px;
+    margin-left: 20px;
 }
-.boxMap{
-    width: 100%;
-    min-width: 50%;
-    display: flex;
+img{
+    height: 51vh;
+    margin-top: 108px;
+}
+/*--------------section footer----responsive Tablette---------------------------*/
+.logoFooter>h2{
+    letter-spacing: 0.15em;
+    font-size: 2.125em;
+    line-height: 2.565em;
+}
+#boxFooter>.textFooter{
+    width: 60%;
+    text-align: center;
+    line-height: 1.125em;
+    font-size: 0.813em;
+    background: #B67D27;
+}
+#boxFooter>.textFooter>p{
+
+margin-top: -45px;
+
+
+}
+#boxFooter>.legalsFooter{
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+}
+/*-----------------------responsive Pc------------------------------*/
+@media screen and (min-width: 1024px) and (max-width: 4000px){
+
+.titleServices{
+    display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+} 
+#services >.boxServices >.titleServices >h2{
+        font-size: 5.563em;
+        line-height: 2.625em;
+        margin-left: 10px;
+    }
+.boxPersonne{
+        display: flex;
+        align-items: center;
+    }
+    h3{
+        margin: 0px 15px;
+        font-size: 1.25em;
+    }
+    #services>.boxPersonne>h3:hover{
+       border-bottom: 4px solid #B67D27;
+       line-height: 30px;
+    }
+    #boxCoupe{
+        width: 100%;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #boxCoupe>.coupeA>.coupe1>h2{
+        font-size: 1.25em;
+        line-height:1.563em ;
+        margin: 10px;
+      }
+    #boxCoupe>.coupeA>.coupe1>p{
+        width: 75%;
+        font-size: 0.813em;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    .coupeB{
+        display: none;
+    }
+    .coupe1{
+        margin-top: 38px;
+    }
+    .coupe1>.pointille{
+        position:relative;
+    }
+    .coupe1>.pointille::before{
+        position: absolute;
+        content:'';
+        border: 2px dashed #B67D27;
+        transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+        width: 20%;
+        margin-top: -25px;
+        margin-left: 47%;
+    }
+    .euro{
+        display: flex;
+        justify-content: center;
+        margin-top: -50px;
+    }
+    .euro{
+        font-family: 'Phosphate';
+        font-size: 1.5em;
+        line-height: 1.938em;
+        color: #B67D27;
+        margin-left: 70%;
+    }
+    .coupe1T>h2{
+        display: none;
+    }
+    .coupe1T>.pointillé{
+        display: none;
+    }
+    .coupe1T>.euro{
+        display: none;
+    }
+    .coupe1T>p{
+        display: none;
+    }
+    .finServices{
+        font-size: 1.313em;
+        margin: 10px;
+        margin-top: 40px;
+        line-height: 1.625em;
+    }
+    /*-----------------------------------section contact---responsive Pc--------------------------*/
+.mapPc{
+        display: flex;
+        flex-direction: row;
+}
+.mapPc>#formulaire{
+       display: flex;
+       justify-content: flex-start;
+}
+.contact>h2{
+    font-size: 5.563em;
+    line-height:6.938em;
+    margin: 0px 0px 0px 60px;
+}
+.contact>.phone,.mail{
+    font-size:2.125em;
+    line-height: 2.656em;
+}
+.contact>.phone{
+    margin-left: 60px;
+    margin-top: -250px;
+}
+.contact>.mail{
+    margin: -35px 0 20px 60px;
+}
+.name,.surname,.telForm,.email,.msg{
+    padding: 15px;
+    font-size: 1.25em;
+    margin:0 0 20px 60px;
+    line-height: 1.688em;
+}
+.name{
+    width: 42%;
+    margin: 50px -2px 0 60px;
+}
+.surname{
+    width: 42%;
+    margin-left: 30px;
+}
+.telForm,.email,.msg{
+    width: 90%;
+}
+.msg{
+    padding: 10%
+}
+img{
+    width: 78%;
+    height: 72%;
+    margin-top: -48px;
+}
+.envoye{
+    width: 100%;
+    font-size: 2.125em;
+    line-height: 2.656em;
+    margin-top: -20px;
+}
+.traitSend{
+    position: relative;
+}
+.traitSend::after{
+    content: '';
+    position: absolute;
+    width: -1%;
+    border: 2px solid #B67D27;
+    margin-left: 20px;
+    margin-left: -382px;
+    margin-top: 548px;
+}
+/*------------------------Partie Footer responsive Pc-------------------------------*/
+.logoFooter{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.logoFooter>h2{
+    font-size: 2.125em;
+    line-height: 2.656em;
+    margin-bottom: 10px;
+    margin-left: -50px;
+}
+.boxTitle{
+    min-height: 25vh;
+    margin-top: 20px;
+}
+#boxFooter{
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#boxFooter>.textFooter{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.textFooter>p{
+    width: 110%;
+    text-align: left;
+    margin-left: -80px;
+    display: flex;
+    justify-content: flex-start;
+}
+.adressFooter{
+    width: 50%;
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
- img{
-    width: 100%;
-    height: 57vh;
-    margin-top: 30px;
+.legalsFooter{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 
@@ -419,7 +719,40 @@ span{
 
 
 
-/*-----------------------responsive Pc------------------------------*/
-@media screen and (min-height: 1024px){
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
 
