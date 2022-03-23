@@ -35,7 +35,7 @@ p{
     display: flex;
     align-items: center;
 }
-h3{
+.boxPersonne>h3{
     margin: 0px 15px;
     font-size: 1.25em;
 }
@@ -64,6 +64,12 @@ h3{
 .coupeB{
     display: none;
 }
+.noone1{
+    display: none;
+}
+.noone2{
+    display: none;
+}
 .coupe1{
     margin-top: 38px;
 }
@@ -90,18 +96,6 @@ h3{
     line-height: 1.938em;
     color: #B67D27;
     margin-left: 70%;
-}
-.coupe1T>h2{
-    display: none;
-}
-.coupe1T>.pointillé{
-    display: none;
-}
-.coupe1T>.euro{
-    display: none;
-}
-.coupe1T>p{
-    display: none;
 }
 .finServices{
     font-size: 1.313em;
@@ -283,6 +277,12 @@ margin-top: 50px;
 span{
     color: #B67D27;
 }
+.coupe1T{
+    display:none
+}
+.coupe1T2{
+    display:none
+}
 /*-------------------------------responsive Tablette--------------------------------------*/
 @media screen and (min-width: 601px) and (max-width:1023px){
 
@@ -318,7 +318,7 @@ span{
     content:'';
     border: 2px dashed #B67D27;
     transform: matrix(1, 0.01, -0.01, 1, 0, 0);
-    width: 55%;
+    width: 50%;
     margin-top: -25px;
     margin-left: 24%;
 }
@@ -333,49 +333,52 @@ span{
     padding-top: 20px;
     padding-bottom: 10px;
 }
-#boxCoupe>.coupeA>.coupe1T>h2{
-    margin-left: 20px;
-    display: flex;
+.noone1{
+    display: block;
+    margin-top: 80px;
 }
-#boxCoupe>.coupeA>.coupe1T>p{
+.noone1>.coupe1>h2{
     margin-left: 20px;
-    color: rgb(235, 227, 210);
+    font-size: 1.25em;
+}
+.noone1>.coupe1>p{
+    width: 72%;
+    margin-left: 20px;
     font-size: 0.813em;
     padding: 5px;
-    display: flex;
 }
-.coupe1T>.pointille{
-    position:relative;
-}
-.coupe1T>.pointille::before{
-    position: absolute;
-    content:'';
-    border: 2px dashed #B67D27;
-    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
-    width: 55%;
+.noone1>.coupe1>.pointille::before{
     margin-top: -10px;
     margin-left: 24%;
 }
-.coupe1T{
-    margin-top: 10px;
-}
-.coupe1T>h2{
-   font-size: 1.25em;
-}
-.coupe1T>p{
-    width: 72%;
-    line-height: 1.4em;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-.coupe1T>.euro{
+.noone1>.coupe1>.euro{
+    margin-top: -35px;
+    margin-left: 70%;
     font-size: 1.5em;
     line-height: 1.938em;
-    color: #B67D27;
-    margin-left: 70%;
-    font-weight: 100;
+}
+.noone2{
+    display: block;
+    margin-top: 80px;
+}
+.noone2>.coupe1>h2{
+    margin-left: 20px;
+    font-size: 1.25em;
+}
+.noone2>.coupe1>p{
+    width: 72%;
+    margin-left: 20px;
+    font-size: 0.813em;
+}
+.noone2>.coupe1>.pointille::before{
+       margin-top: -10px;
+    margin-left: 24%;
+}
+.noone2>.coupe1>.euro{
     margin-top: -35px;
-    display: flex;
+    margin-left: 70%;
+    font-size: 1.5em;
+    line-height: 1.938em;
 }
 .finServices{
     margin-left: 30px;
@@ -464,12 +467,16 @@ span{
     flex-direction: column;
     margin-top: 20px;
 }
+.traitSend{
+    position: relative;
+}
 .traitSend:after{
-    content: '';
     position: absolute;
-    width: 10%;
-    border: 2px solid #B67D27;
-    margin-left: 20px;
+    content:'';
+    border: 2px #B67D27;
+    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+    width: 55%;
+    margin-top: 20px;
 }
 img{
     height: 51vh;
@@ -486,13 +493,9 @@ img{
     text-align: center;
     line-height: 1.125em;
     font-size: 0.813em;
-    background: #B67D27;
 }
 #boxFooter>.textFooter>p{
-
-margin-top: -45px;
-
-
+    margin-top: -45px;
 }
 #boxFooter>.legalsFooter{
     font-size: 0.9em;
@@ -503,96 +506,143 @@ margin-top: -45px;
 }
 /*-----------------------responsive Pc------------------------------*/
 @media screen and (min-width: 1024px) and (max-width: 4000px){
-
 .titleServices{
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin-left: 60px;
 } 
 #services >.boxServices >.titleServices >h2{
-        font-size: 5.563em;
-        line-height: 2.625em;
-        margin-left: 10px;
-    }
+    font-size: 5.563em;
+    line-height: 2.625em;
+}
 .boxPersonne{
-        display: flex;
-        align-items: center;
-    }
-    h3{
-        margin: 0px 15px;
-        font-size: 1.25em;
-    }
-    #services>.boxPersonne>h3:hover{
-       border-bottom: 4px solid #B67D27;
-       line-height: 30px;
-    }
-    #boxCoupe{
-        width: 100%;
-        min-height: 80vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #boxCoupe>.coupeA>.coupe1>h2{
-        font-size: 1.25em;
-        line-height:1.563em ;
-        margin: 10px;
-      }
-    #boxCoupe>.coupeA>.coupe1>p{
-        width: 75%;
-        font-size: 0.813em;
-        margin-left: 10px;
-        margin-top: 0px;
-    }
-    .coupeB{
-        display: none;
-    }
-    .coupe1{
-        margin-top: 38px;
-    }
-    .coupe1>.pointille{
-        position:relative;
-    }
-    .coupe1>.pointille::before{
-        position: absolute;
-        content:'';
-        border: 2px dashed #B67D27;
-        transform: matrix(1, 0.01, -0.01, 1, 0, 0);
-        width: 20%;
-        margin-top: -25px;
-        margin-left: 47%;
-    }
-    .euro{
-        display: flex;
-        justify-content: center;
-        margin-top: -50px;
-    }
-    .euro{
-        font-family: 'Phosphate';
-        font-size: 1.5em;
-        line-height: 1.938em;
-        color: #B67D27;
-        margin-left: 70%;
-    }
-    .coupe1T>h2{
-        display: none;
-    }
-    .coupe1T>.pointillé{
-        display: none;
-    }
-    .coupe1T>.euro{
-        display: none;
-    }
-    .coupe1T>p{
-        display: none;
-    }
-    .finServices{
-        font-size: 1.313em;
-        margin: 10px;
-        margin-top: 40px;
-        line-height: 1.625em;
-    }
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+}
+.boxPersonne>h3{
+    margin: 0px 15px;
+    font-size: 1.25em;
+}
+#services>.boxPersonne>h3:hover{
+    border-bottom: 4px solid #B67D27;
+    line-height: 30px;
+}
+#services{
+    width: 100vw;
+}
+#boxCoupe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#boxCoupe>.coupeA>.coupe1>h2{
+    font-size: 1.25em;
+    line-height:1.563em ;
+    margin: 10px;
+  }
+#boxCoupe>.coupeA>.coupe1>p{
+    width: 90%;
+    font-size: 0.813em;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+#boxCoupe>.coupeB{
+    width: 50%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}  
+#boxCoupe>.coupeB>.coupe2>h2{
+    font-size: 1.25em;
+    line-height:1.563em ;
+    margin: 10px;
+  }
+#boxCoupe>.coupeB>.coupe2>p{
+    width: 92%;
+    font-size: 0.813em;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.coupeA{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.coupeB{
+    width: 50%;
+    display: block;
+    margin-left: 20px;
+    margin-top: 90px;
+}
+.coupe1>.pointille::before{
+    margin-top: -25px;
+    margin-left: 26%;
+    width: 61%;
+}
+.noone1{
+    display: block;
+    margin-top: 20px;
+}
+.noone1>.coupe1>h2{
+    margin-left: 20px;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+.noone1>.coupe1>p{
+    width: 90%;
+    margin-left: 10px;
+    font-size: 0.813em;
+    padding: 5px;
+}
+.noone1>.coupe1>.pointille::before{
+    margin-top: -10px;
+    margin-left: 26%;
+    width: 61%;
+}
+.euro{
+    margin-left: 85%;
+    margin-top: -50px;
+}
+.noone1>.coupe1>.euro{
+    margin-top: -45px;
+}
+.noone1>.coupe1>.pointille{
+    margin-top: -10px;
+}
+.coupe2{
+    position:relative;
+}
+.coupe2>.pointille::before{
+    position: absolute;
+    content:'';
+    border: 2px dashed #B67D27;
+    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+    width: 61%;
+    margin-top: -25px;
+    margin-left: 160px;
+}
+.coupe2>h2{
+    font-size: 1.25em;
+    margin-left: 10px;
+}
+.coupe2>p{
+    font-size: 0.813em;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+.finServices{
+    display: none;
+}
+.traitEspace{
+    display: none;
+}
     /*-----------------------------------section contact---responsive Pc--------------------------*/
 .mapPc{
         display: flex;
@@ -625,15 +675,15 @@ margin-top: -45px;
     line-height: 1.688em;
 }
 .name{
-    width: 42%;
+    width: 40%;
     margin: 50px -2px 0 60px;
 }
 .surname{
-    width: 42%;
+    width: 40%;
     margin-left: 30px;
 }
 .telForm,.email,.msg{
-    width: 90%;
+    width: 85%;
 }
 .msg{
     padding: 10%
@@ -652,7 +702,8 @@ img{
 .traitSend{
     position: relative;
 }
-.traitSend::after{
+/* -----PROBLEME TRAIT BOUGE ENCORE ----*/
+.traitSend:after{
     content: '';
     position: absolute;
     width: -1%;
@@ -667,36 +718,28 @@ img{
     height: 50%;
     display: flex;
     justify-content: space-between;
-}
-.logoFooter>h2{
+    min-width: 90vw;
     font-size: 2.125em;
     line-height: 2.656em;
-    margin-bottom: 10px;
-    margin-left: -50px;
 }
 .boxTitle{
     min-height: 25vh;
-    margin-top: 20px;
+    margin-top: -110px;
 }
 #boxFooter{
-    width: 100%;
-    height: 50%;
+    min-height: 25vh;
+    min-width: 90vw;
     flex-direction: row;
     align-items: flex-start;
 }
 #boxFooter>.textFooter{
     width: 50%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     margin-top: 0px;
 }
 .textFooter>p{
     width: 110%;
     text-align: left;
-    margin-left: -80px;
-    display: flex;
-    justify-content: flex-start;
+    
 }
 .adressFooter{
     width: 50%;
@@ -710,19 +753,6 @@ img{
     align-items: flex-end;
     flex-direction: column;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -749,7 +779,7 @@ img{
 
 
 
-}
+
 
 
 
