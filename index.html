@@ -1,14 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Pure Haircut</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
 </head>
+
 <body>
+
+    <header>
+        <div id="boxNav">
+            <div class="nav">
+                  <a href="ACCUEIL">ACCUEIL</a>
+                  <a href="OMBRÉ + COULEUR">NOS RÉALISATIONS</a>
+                  <a href="NOS SERVICES">NOS SERVICES</a>
+                  <a href="CONTACT">CONTACT</a> 
+            </div>
+
+            <div class="boxReseau">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div class="boxMenu">
+                <div class="trait1"></div>
+                <div class="trait2"></div>
+                <div class="trait3"></div>
+            </div>
+        </div>
+        </div>
+
+        <div id="boxHeader">
+            <h1>
+                PURE HAIRCUT
+            </h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s,</p>
+            <h2>
+                DÉCOUVRIR NOS PRESTAT<span>IONS</span>
+            </h2>
+            <div class="ligneHeader"></div>
+            <div class="roundHeader">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div id="photoHeader">
+            <img src="assets/img/about.png"photo fille cheveux">
+        </div>
+
+    </header>
+
+    <section id="BoxOmbreCouleur">
+        <div class="boxCouleur">
+            <h3>
+                OMBRÉ + COULEUR
+            </h3>
+            <div class="container">
+                <div class="slides">
+                    <img src="assets/img/realisation_3.jpg" style="width: 20rem;">
+                </div>
+
+                <div class="slides">
+                    <img src="assets/img/realisation_1.jpg" style="width: 20rem">
+                </div>
+                <div class="slides">
+                    <img src="assets/img/realisation_2.jpg" style="width: 20rem">
+                </div>
+
+            </div>
+            
+            <div class="Spoint" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+        <div class="nousContacter">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+            </p>
+            <i class="fa fas fa-quote-left" aria-hidden="true"></i>
+            <div class="ligneCONTACTER1"></div>
+            
+            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s.
+            </span>
+            <div class="ligneCONTACTER1"></div>
+            <a class="fa fa-quote-right" aria-hidden="true"></a>
+            <h3>
+                NOUS CONTACTER
+            </h3>
+            <div class="ligneCONTACTER2"></div>
+        </div>
+
+
+    </section>
+
+
+
 
  <main>
      <!---------------------------------------section Nos Services ----------------------------------->
@@ -225,8 +329,10 @@
             </div>
         </div>            
     </footer>
-</main>   
+</main>
+   <script src="assets/js/app.js"></script>
 </body>
-<script src="assets/js/app.js"></script>
+
 </html>
+
 

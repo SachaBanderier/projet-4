@@ -1,3 +1,7 @@
+a{
+    list-style-type: none;
+    color: white;
+}
 @font-face {font-family: "Open Sans"; src: url("../font/OpenSans-Regular.ttf");}
 @font-face {font-family: "Phosphate"; src: url("../font/PhosphateRR\ Solid.ttf");}
 
@@ -50,6 +54,106 @@ p{
     align-items: center;
     justify-content: center;
 }
+
+
+body {
+    background: radial-gradient(61.59% 119.66% at 100% 38.41%, rgba(53, 43, 43, 0.77) 0%, #2E2C2C 86.77%);
+
+}
+
+header {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.boxReseau {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boxReseau>.fa {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.boxReseau>.fa-facebook {
+    height: 25%;
+    width: 14px;
+    left: 267px;
+    top: 10px;
+    border-radius: 0px;
+    font-size: 1.6em;
+    margin-right: 5%;
+    margin-top: 2.5%;
+}
+
+.boxReseau>.fa-twitter {
+    height: 100%;
+    width: 25px;
+    left: 400px;
+    top: 18px;
+    border-radius: 0px;
+    font-size: 1.6em;
+    margin-right: 5%;
+    margin-top: 2.5%;
+}
+
+.boxReseau>.fa-instagram {
+    height: 50px;
+    width: 21px;
+    left: 351px;
+    top: 17px;
+    border-radius: 0px;
+    font-size: 1.6em;
+    margin-right: 5%;
+    margin-top: 2.5%;
+}
+
+.boxMenu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    border: none;
+    font-size: 30px;
+    padding: 0;
+    margin-top: -50px;
+    flex-direction: column;
+}
+
+.boxMenu>.trait3 {
+    width: 13%;
+    border: 2px solid;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 5px;
+    margin-left: 5px;
+    flex-direction: column;
+    display: flex;
+}
+
+.boxMenu>.trait2 {
+    width: 10%;
+    border: 2px solid;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 5px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxMenu>.trait1 {
+    width: 7%;
+    border: 2px solid;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#boxHeader {
+    width: 100%;
+    height: 100vh;
+
 #boxCoupe>.coupeA>.coupe1>h2{
     font-size: 1.25em;
     line-height:1.563em ;
@@ -231,6 +335,72 @@ footer{
     justify-content: center;
     flex-direction: column;
 }
+
+
+#boxHeader>h1 {
+    font-family: "phosphate";
+    color: white;
+    width: 96%;
+    height: 182px;
+    margin-top: -1.6px;
+    font-size: 5.5em;
+    font-weight: 400;
+}
+
+#boxHeader>p {
+    font-family: "Open Sans";
+    color: rgb(235, 227, 227);
+    width: 81%;
+    height: 10.25vh;
+    margin-top: -1.28px;
+    margin-left: -60px;
+    font-weight: 400;
+    font-size: 0.813em;
+}
+
+#boxHeader>h2 {
+    font-family: "phosphate";
+    color: white;
+    text-align: line;
+    font-weight: 400;
+    font-size: 1;
+    margin-left: -50px;
+}
+
+.ligneHeader {
+    width: 70%;
+    border: 2px solid;
+    color: rgba(182, 125, 39, 1);
+    margin-bottom: 0.16px;
+    margin-left: 0.16;
+    flex-direction: column;
+    margin-left: -100px;
+    display: flex;
+    margin-top: -15px;
+}
+
+.roundHeader {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: 220px;
+    margin-left: 300px;
+}
+
+.fa-phone {
+    height: 100%;
+    width: 85%;
+    color: rgba(182, 125, 39, 1);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    font-size: 2em;
+}
+
+#BoxOmbreCouleur {
+    display: flex;
+    text-align: center;
+  }
 .boxTitle{
     min-height: 25vh;
     display: flex;
@@ -426,6 +596,286 @@ span{
     justify-content: center;
     flex-direction: column;
 }
+
+
+.boxCouleur {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.boxCouleur>h3 {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: "phosphate";
+    font-weight: 150;
+    font-size: 2.125em;
+    text-align: line;
+}
+
+.container {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 16px;
+    border-radius: 0 3px 3px 0;
+    background: rgba(0, 0, 0, .5);
+    transition: all .3s;
+}
+
+.Spoint {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 10px 2px 0 2px;
+    display: inline-block;
+    background: #ddd;
+    transition: all .3s;
+}
+
+.active,
+.dot:hover {
+    background: #717171;
+}
+
+#BoxOmbreCouleur>img {
+    width: 20%;
+    height: 10vh;
+    display: flex;
+    right: 0;
+    flex-direction: column;
+}
+
+.NousContacter {
+    display: flex;
+}
+
+.nousContacter>p {
+    font-family: "open Sans";
+    color: rgb(235, 227, 227);
+    width: 81%;
+    height: 10.25vh;
+    font-weight: 400;
+    font-size: 0.813em;
+    text-align: start;
+    align-items: flex-start;
+}
+
+.nousContacter>i {
+    color: rgba(182, 125, 39, 1);
+    font-size: 1.3em;
+    display: flex;
+    margin-top: 8%;
+}
+
+.nousContacter>a {
+    color: rgba(182, 125, 39, 1);
+    font-size: 1.3em;
+    display: flex;
+}
+
+.ligneCONTACTER1 {
+    width: 80%;
+    margin: 4%;
+    border: 1px solid;
+    color: rgba(182, 125, 39, 1);
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    margin-left: 0%
+}
+
+.nousContacter>span {
+    font-family: "open Sans";
+    color: rgb(235, 227, 227);
+    width: 81%;
+    height: 10.25vh;
+    font-weight: 400;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+}
+
+.nousContacter>h3 {
+    font-family: "phosphate";
+    color: white;
+    text-align: line;
+    margin-left: -65%;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.ligneCONTACTER2 {
+    width: 25%;
+    margin: -3%;
+    border: 2px solid;
+    color: rgba(182, 125, 39, 1);
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    margin-left: 0%
+}
+
+#photoHeader>img {
+    display: none;
+}
+
+/* --- responsive tab */
+@media screen and (min-width: 600px) {
+
+
+    #photoHeader {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    #photoHeader>img {
+        width: 400px;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -1200px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        margin-left: 80%;
+        z-index: -1;
+    }
+
+    #boxHeader>h1 {
+        width: 55%;
+        font-size: 5.563em;
+        margin-top: -325px;
+        margin-right: 300px;
+
+    }
+
+    #boxHeader>p {
+        width: 63%;
+        height: 10.25vh;
+        margin-top: -1.28px;
+        margin-left: -242px;
+        font-weight: 400;
+        font-size: 0.813em;
+    }
+
+    #boxHeader>h2 {
+        font-family: "phosphate";
+        color: white;
+        text-align: line;
+        font-weight: 400;
+        font-size: 1;
+        margin-left: -389px;
+    }
+
+    .ligneHeader {
+        width: 34%;
+        border: 2px solid;
+        color: rgba(182, 125, 39, 1);
+        margin-bottom: 0.16px;
+        margin-left: 0.16;
+        flex-direction: column;
+        margin-left: -452px;
+        display: flex;
+        margin-top: -15px;
+    }
+
+    .fa-phone {
+        display: none;
+    }
+
+    .roundHeader {
+        display: none;
+    }
+
+    .nousContacter>span {
+        font-family: "open Sans";
+        color: rgb(235, 227, 227);
+        width: 51%;
+        height: 10.25vh;
+        font-weight: 400;
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: flex-start;
+    }
+
+    .nousContacter>i {
+        color: rgba(182, 125, 39, 1);
+        font-size: 1.3em;
+        display: flex;
+        margin-top: 8%;
+    }
+
+    .ligneCONTACTER2 {
+        width: 17%;
+        margin: -1%;
+        border: 2px solid;
+        color: rgba(182, 125, 39, 1);
+        align-items: flex-start;
+        flex-direction: column;
+        display: flex;
+        margin-left: 4%
+    }
+
+    .nousContacter>h3 {
+        font-family: "phosphate";
+        color: white;
+        text-align: line;
+        margin-left: -74%;
+        font-weight: 400;
+        font-size: 1em;
+    }
+    .boxMenu {
+        display: none;
+    }
+
+    /*-- responsive pc*/
+    @media screen and (max-width: 1024px) {
+
+   
+    
+
+        #photoHeader>img {
+            width: 50%;
+            height: 50vh;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .boxMenu {
+            display: none;
+        }
+    
+
+
 .formulaire>form{
     display: flex;
     flex-direction: column;
@@ -753,7 +1203,8 @@ img{
     align-items: flex-end;
     flex-direction: column;
 }
-}
+  }
+
 
 
 
